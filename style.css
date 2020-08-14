@@ -1,0 +1,92 @@
+body {
+  background-color: steelblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Comic Sans MS;
+  animation: fallen 1.5s ease;
+}
+
+p{
+  color: white;
+  text-align: center;
+  font-family: Comic Sans MS;
+  animation: links 1.5s esae;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 450px;
+  border: 2px solid white;
+  animation: rechts 1.5s ease;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  whidth: 150px;
+  background-color: steelblue;
+  border: 2px solid white;
+  cursor: pointer;
+  font-family: Comic Sans MS;
+  color: white;
+  animation: heben 1.5s ease;
+}
+
+button:hover {
+  background-color: #2d5475;
+}
+
+button:active {
+  background-color: LightSteelBlue;
+  color:#090909;
+}
+
+@keyframes fallen {
+  0%{
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: transelateY(0px);
+  }
+}
+
+@keyframes heben {
+  0%{
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: transelateY(0px);
+  }
+}
+
+@keyframes rechts {
+  0%{
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: transelateX(0px);
+  }
+  
+  @keyframes links {
+  0%{
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: transelateX(0px);
+  }
